@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+#logo{
+    max-width: 7.5vw;
+}
+
+.img-background{
+    width: 100%;
+}
+.tam{
+    width:100px;
+    height: 100px;
+    color: white;
+}
+
+.banner{
+	padding: 12vw;
+	text-align: center;
+    background: url("../assets/images/banner-initial.png")  top left/cover no-repeat fixed ;
+}
+
+.section{
+    background-color: black;
+    padding: 10vh;
+}
