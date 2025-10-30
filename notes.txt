@@ -1,0 +1,3 @@
+Anotações
+- pra desativar js
+chrome://settings/content/javascript

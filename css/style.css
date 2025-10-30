@@ -25,10 +25,10 @@
 
 .section{
     background-color: black;
-    padding: 10vh;
+    padding: 5vh;
 }
 
-hr{
+.hr-1{
     border: 0;
     margin: 0;
     height: 3px;
@@ -36,17 +36,42 @@ hr{
     opacity: 1;
 }
 
-.custom-btn{
-    background-color: red;
-    color:#fff;
-    font-size: 30px;
-    font-weight: 700;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 42px;
-    padding-right: 42px;
+.custom-btn {
+  background-color: rgb(219, 0, 0);
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 20px 30px;
 }
 
 .custom-btn:hover{
-    background-color: rgb(201, 0, 0)
+    background-color: rgb(179, 0, 0)
+}
+
+.accordion-item {
+  --bs-accordion-bg: #fff;
+  --bs-accordion-btn-bg: #303030;
+  --bs-accordion-btn-color: #fff;
+  --bs-accordion-active-bg: #303030;
+  --bs-accordion-active-color: #fff;
+  --bs-accordion-btn-padding-y: 25px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.accordion-button::after {
+    background-image: url("../assets/images/add.svg") !important;
+    background-size: 20px;
+}
+
+.accordion-flush .accordion-item {
+    border-bottom: 0;
+}
+
+.accordion-button{
+    font-size: 25px;
+}
+
+.accordion-body{
+    color: black;
 }
