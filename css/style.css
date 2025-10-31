@@ -5,7 +5,10 @@
 }
 
 #logo{
-    max-width: 7.5vw;
+    max-width: 120px; 
+    height: auto;
+    z-index: 1000;
+    position: relative;
 }
 
 .img-background{
@@ -18,14 +21,21 @@
 }
 
 .banner{
-	padding: 12vw;
+	padding: 10vw;
 	text-align: center;
-    background: url("../assets/images/banner-initial.png")  top left/cover no-repeat fixed ;
+    background:  linear-gradient(
+            rgba(0, 0, 0, 0.397), 
+            rgba(82, 72, 72, 0.3)
+        ), url("../assets/images/banner-initial.png")  top left/cover no-repeat fixed ;
+    height: 675px;
+    filter: brightness(0.9) contrast(1.1) saturate(1.2);
+    position: relative;
+
 }
 
 .section{
     background-color: black;
-    padding: 5vh;
+    padding: 7vh;
 }
 
 .hr-1{
