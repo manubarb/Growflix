@@ -29,8 +29,12 @@
         ), url("../assets/images/banner-initial.png")  top left/cover no-repeat fixed ;
     height: 675px;
     filter: brightness(0.9) contrast(1.1) saturate(1.2);
-    position: relative;
+}
 
+.banner-2{
+	padding: 10vw;
+    background: url("../assets/images/growcast-01.png")  top left/cover no-repeat fixed ;
+    height: 750px;
 }
 
 .section{

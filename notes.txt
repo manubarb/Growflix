@@ -1,3 +1,5 @@
 Anotações
 - pra desativar js
 chrome://settings/content/javascript
+- flexbox
+https://drive.google.com/file/d/1qDAnS2EDVVT7CRMWmiZN-Fc0aw9I9qvw/view?pli=1
