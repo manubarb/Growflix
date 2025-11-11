@@ -50,3 +50,22 @@ https://youtu.be/ouDn8z3PSqs Como é o dia a dia de um dev? Live Growdev com Mar
 https://youtu.be/cQDQNX6NXYo Onde trabalhar com qualidade de software? Conheça a Testing Company, empresa parceira da Growdev
 https://youtu.be/nKGbolkirBM WEBINAR ANALISTA DE DADOS - com Paulo Marcon da Arezzo&Co
 https://youtu.be/6sZPsqNjeek Tecnologia trazendo soluções para a Arezzo & CO | Ricardo Pinho
+
+- resposta do prompt do kimi k2
+
+INPUT
+└─ Array de objetos → cada objeto = 1 vídeo
+├─ título
+├─ thumbURL
+├─ videoURL
+└─ categoria
+
+PROCESSAMENTO
+├─ Passo A – Filtro: recebe (array, categoria) → devolve sub-array
+├─ Passo B – Gerador de HTML: recebe sub-array → devolve string de cards
+└─ Passo C – Injetor: recebe string → coloca no container correto do DOM
+
+OUTPUT (o que o usuário vê)
+├─ Container “Categoria X” preenchido com N cards
+├─ Mesma coisa para “Categoria Y”, etc.
+└─ (extra) Mensagem “Nenhum vídeo nesta categoria” quando sub-array vazio
