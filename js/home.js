@@ -2,16 +2,17 @@ import {videos} from './data.js';
 
 function returnObjectArray(objectArray){
     return objectArray.filter(video => {
-        const validCategories = ["Growcast", "Flutter", "Jornada UX/UI", "Diversos"]; 
+        const validCategories = ["Growdev", "Webinar em Flutter", "Jornada UX/UI", "Diversos"]; 
         return validCategories.includes(video.category);
     })
 }
 
 function createCards(objArray) {
     const card = objArray.map(obj => {
-      const { img, link, category } = obj
-      return `<div class="col ${category}">
+      const { img, title, link} = obj
+      return `<div class="col">
                 <img src="${img}" class="img-fluid">
+                <p>${title}</p>
             </div>
             <a href="${link}"></a>`
     }).join('')
@@ -26,10 +27,10 @@ function createCards(objArray) {
 function renderCards(){
     const cardsArray = returnObjectArray(videos)
     const categories = [
-        { name: "growcast", elementId: "growcast" },
-        { name: "flutter", elementId: "flutter" },
-        { name: "ux-ui", elementId: "ux-ui" },
-        { name: "diversos", elementId: "diversos" }
+        { name: "Growdev", elementId: "growcast" },
+        { name: "Webinar em Flutter", elementId: "flutter" },
+        { name: "Jornada UX/UI", elementId: "ux-ui" },
+        { name: "Diversos", elementId: "diversos" }
     ]
 
     categories.forEach(({ name, elementId }) => {
@@ -41,4 +42,4 @@ function renderCards(){
     })
 
 }
-
+ renderCards()
