@@ -26,20 +26,30 @@
     background:  linear-gradient(
             rgba(0, 0, 0, 0.397), 
             rgba(82, 72, 72, 0.3)
-        ), url("../assets/images/banner-initial.png")  top left/cover no-repeat fixed ;
+        ), url("../assets/images/banner-initial.png")  center/cover no-repeat fixed ;
     height: 675px;
     filter: brightness(0.9) contrast(1.1) saturate(1.2);
 }
 
 .banner-2{
 	padding: 10vw;
-    background: url("../assets/images/growcast-01.png")  top left/cover no-repeat fixed ;
+    background: url("../assets/images/growcast-01.png")  center/cover no-repeat scroll ;
     height: 750px;
 }
 
 .section{
     background-color: black;
     padding: 7vh;
+}
+
+.section-2{
+    background-color: black;
+    padding: 5vh;
+}
+
+.section-2 > div:first-child {
+    padding-left: 6vw;
+    font-size: 1.2vw;
 }
 
 .hr-1{
@@ -88,4 +98,70 @@
 
 .accordion-body{
     color: black;
+}
+
+.my-btn{
+    font-weight: bold;
+    color:  #f8f9fa;
+    text-decoration: none; 
+}
+
+.my-btn:hover {
+    color: #ee7300;           
+    text-decoration: none; 
+}
+
+.my-btn:hover svg {
+    fill: #ee7300; 
+}
+
+.col {
+    margin: 10px;
+}
+
+.card-wrapper {
+   height: 200px;
+   width: 310px;
+   transition: all 0.5s ease;
+}
+
+.card-wrapper:hover {
+  transform: translateY(-10px) scale(1.1);
+}
+
+.my-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card-info {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    display: flex;
+    transform: translateY(10px);
+    transition: all 0.5s ease;
+    pointer-events: none;
+}
+
+.col:hover .card-info {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: visible;
+}
+
+.card-title {
+    font-size: 15px;
+    padding: 8px 10px 15px 10px;
+    line-height: 2;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.nav-link.text-secondary:hover {
+    color: #b4b4b4 !important;
 }
