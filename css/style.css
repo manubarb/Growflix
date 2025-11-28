@@ -33,7 +33,7 @@
 
 .banner-2{
 	padding: 10vw;
-    background: url("../assets/images/growcast-01.png")  center/cover no-repeat scroll ;
+    background: url("../assets/images/growcast-01.png")  top left/cover no-repeat scroll ;
     height: 750px;
 }
 
@@ -144,6 +144,7 @@
     transform: translateY(10px);
     transition: all 0.5s ease;
     pointer-events: none;
+    cursor: pointer;
 }
 
 .col:hover .card-info {
