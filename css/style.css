@@ -20,14 +20,17 @@
     color: white;
 }
 
+.my-padding{
+    padding: 0 15rem 0 15rem
+}
+
 .banner{
-	padding: 10vw;
+	padding: 5vw 10vh;
 	text-align: center;
     background:  linear-gradient(
             rgba(0, 0, 0, 0.397), 
             rgba(82, 72, 72, 0.3)
         ), url("../assets/images/banner-initial.png")  center/cover no-repeat fixed ;
-    height: 675px;
     filter: brightness(0.9) contrast(1.1) saturate(1.2);
 }
 
